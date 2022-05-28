@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="rpq-lj-JFg">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="VUT-1g-cKc">
+            <objects>
+                <navigationController modalPresentationStyle="fullScreen" id="rpq-lj-JFg" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="YZt-aN-Mao"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Yts-dh-y5S">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="Eis-Dc-uTB" kind="relationship" relationship="rootViewController" id="uK4-7c-fW0"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="joV-st-sR9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1368" y="-565"/>
+        </scene>
+        <!--Root View Controller-->
+        <scene sceneID="PI6-bE-NBb">
+            <objects>
+                <viewController id="Eis-Dc-uTB" customClass="RootViewController" customModule="ClinicalNutritionPlayground" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ork-vc-tGn">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="igj-7a-FSk">
+                                <rect key="frame" x="77" y="107" width="260" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="18O-88-wjA"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="NPC/N Ratio"/>
+                                <connections>
+                                    <action selector="tappedButton:" destination="Eis-Dc-uTB" eventType="touchUpInside" id="hFC-m0-xFl"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z3f-3y-ooz">
+                                <rect key="frame" x="77" y="260" width="260" height="100"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="BMI"/>
+                                <connections>
+                                    <segue destination="Tvt-z0-9GV" kind="show" id="p30-IA-QDg"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="koR-fx-OWm"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="koR-fx-OWm" firstAttribute="bottom" secondItem="z3f-3y-ooz" secondAttribute="bottom" constant="502" id="4fH-02-vnh"/>
+                            <constraint firstItem="igj-7a-FSk" firstAttribute="top" secondItem="koR-fx-OWm" secondAttribute="top" constant="19" id="CMG-5H-UpL"/>
+                            <constraint firstItem="z3f-3y-ooz" firstAttribute="top" secondItem="igj-7a-FSk" secondAttribute="bottom" constant="53" id="GMR-cS-AUW"/>
+                            <constraint firstItem="igj-7a-FSk" firstAttribute="leading" secondItem="koR-fx-OWm" secondAttribute="leading" constant="77" id="HUd-hr-DL5"/>
+                            <constraint firstItem="igj-7a-FSk" firstAttribute="trailing" secondItem="z3f-3y-ooz" secondAttribute="trailing" id="eVJ-DS-DJA"/>
+                            <constraint firstItem="igj-7a-FSk" firstAttribute="leading" secondItem="z3f-3y-ooz" secondAttribute="leading" id="nou-ia-vRe"/>
+                            <constraint firstItem="igj-7a-FSk" firstAttribute="centerX" secondItem="ork-vc-tGn" secondAttribute="centerX" id="sCg-2k-QKk"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="Dyq-Ek-Zhl"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kd5-Di-vf9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-586" y="-565"/>
+        </scene>
+        <!--BMIConverter-->
+        <scene sceneID="DU0-7H-oUH">
+            <objects>
+                <viewControllerPlaceholder storyboardName="BMIConverter" id="Tvt-z0-9GV" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="mp6-l2-hOS"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GU0-os-sZP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="126" y="-147"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

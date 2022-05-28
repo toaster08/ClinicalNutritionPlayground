@@ -1,0 +1,921 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		066F8C993AD4685B66422538 /* Pods_ClinicalNutritionPlayground.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 69371BDC3F2342BBC95B3C84 /* Pods_ClinicalNutritionPlayground.framework */; };
+		1878613A283FEE9000C6AEF5 /* StatDataUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18786139283FEE8F00C6AEF5 /* StatDataUseCase.swift */; };
+		187B260E2833B38D00758648 /* StatDataObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187B260D2833B38D00758648 /* StatDataObject.swift */; };
+		187B26102833CDB800758648 /* ProfessionChartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187B260F2833CDB800758648 /* ProfessionChartViewController.swift */; };
+		187B26122833CDDA00758648 /* ProfessionChartViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187B26112833CDDA00758648 /* ProfessionChartViewModel.swift */; };
+		18A4A9E92833110F00FFED07 /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A4A9E82833110F00FFED07 /* APIClient.swift */; };
+		18AA09F5282595FF0013DDCA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18AA09F4282595FF0013DDCA /* AppDelegate.swift */; };
+		18AA09F7282595FF0013DDCA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18AA09F6282595FF0013DDCA /* SceneDelegate.swift */; };
+		18AA09F9282595FF0013DDCA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18AA09F8282595FF0013DDCA /* ViewController.swift */; };
+		18AA09FC282595FF0013DDCA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18AA09FA282595FF0013DDCA /* Main.storyboard */; };
+		18AA09FE282596010013DDCA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18AA09FD282596010013DDCA /* Assets.xcassets */; };
+		18AA0A01282596010013DDCA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18AA09FF282596010013DDCA /* LaunchScreen.storyboard */; };
+		18AA0A0C282596010013DDCA /* ClinicalNutritionPlaygroundTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18AA0A0B282596010013DDCA /* ClinicalNutritionPlaygroundTests.swift */; };
+		18AA0A16282596010013DDCA /* ClinicalNutritionPlaygroundUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18AA0A15282596010013DDCA /* ClinicalNutritionPlaygroundUITests.swift */; };
+		18AA0A18282596010013DDCA /* ClinicalNutritionPlaygroundUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18AA0A17282596010013DDCA /* ClinicalNutritionPlaygroundUITestsLaunchTests.swift */; };
+		18AA0A29282598CC0013DDCA /* RatioConverterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18AA0A28282598CC0013DDCA /* RatioConverterViewController.swift */; };
+		18AA0A2B28259A6C0013DDCA /* RatioConverterPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18AA0A2A28259A6C0013DDCA /* RatioConverterPresenter.swift */; };
+		18AA0A2D28259DC20013DDCA /* PFCRatio.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18AA0A2C28259DC20013DDCA /* PFCRatio.swift */; };
+		18AA0A2F2825A2260013DDCA /* RatioConverterUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18AA0A2E2825A2260013DDCA /* RatioConverterUseCase.swift */; };
+		18AA0A3628265B2E0013DDCA /* BMICalculatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18AA0A3528265B2E0013DDCA /* BMICalculatorViewController.swift */; };
+		18AA0A38282665D90013DDCA /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18AA0A37282665D90013DDCA /* Person.swift */; };
+		18AA0A3A28267BCF0013DDCA /* BMICalculatorViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18AA0A3928267BCF0013DDCA /* BMICalculatorViewModel.swift */; };
+		18AA0A3C28267BE30013DDCA /* PersonProfileUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18AA0A3B28267BE30013DDCA /* PersonProfileUseCase.swift */; };
+		53AA404889DA851F99C770E1 /* Pods_ClinicalNutritionPlayground_ClinicalNutritionPlaygroundUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2888B33AC8DB296EC82853D9 /* Pods_ClinicalNutritionPlayground_ClinicalNutritionPlaygroundUITests.framework */; };
+		C66CD754356185041026230F /* Pods_ClinicalNutritionPlaygroundTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E05170AABC49A0D07BDB9F2 /* Pods_ClinicalNutritionPlaygroundTests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		18AA0A08282596010013DDCA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 18AA09E9282595FF0013DDCA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 18AA09F0282595FF0013DDCA;
+			remoteInfo = ClinicalNutritionPlayground;
+		};
+		18AA0A12282596010013DDCA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 18AA09E9282595FF0013DDCA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 18AA09F0282595FF0013DDCA;
+			remoteInfo = ClinicalNutritionPlayground;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		03AAC5026DF20BDE09EE48A9 /* Pods-ClinicalNutritionPlaygroundTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ClinicalNutritionPlaygroundTests.release.xcconfig"; path = "Target Support Files/Pods-ClinicalNutritionPlaygroundTests/Pods-ClinicalNutritionPlaygroundTests.release.xcconfig"; sourceTree = "<group>"; };
+		18786139283FEE8F00C6AEF5 /* StatDataUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatDataUseCase.swift; sourceTree = "<group>"; };
+		187B260D2833B38D00758648 /* StatDataObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatDataObject.swift; sourceTree = "<group>"; };
+		187B260F2833CDB800758648 /* ProfessionChartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfessionChartViewController.swift; sourceTree = "<group>"; };
+		187B26112833CDDA00758648 /* ProfessionChartViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfessionChartViewModel.swift; sourceTree = "<group>"; };
+		18A4A9E82833110F00FFED07 /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
+		18AA09F1282595FF0013DDCA /* ClinicalNutritionPlayground.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ClinicalNutritionPlayground.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		18AA09F4282595FF0013DDCA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		18AA09F6282595FF0013DDCA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		18AA09F8282595FF0013DDCA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		18AA09FB282595FF0013DDCA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		18AA09FD282596010013DDCA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		18AA0A00282596010013DDCA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		18AA0A02282596010013DDCA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		18AA0A07282596010013DDCA /* ClinicalNutritionPlaygroundTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ClinicalNutritionPlaygroundTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		18AA0A0B282596010013DDCA /* ClinicalNutritionPlaygroundTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClinicalNutritionPlaygroundTests.swift; sourceTree = "<group>"; };
+		18AA0A11282596010013DDCA /* ClinicalNutritionPlaygroundUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ClinicalNutritionPlaygroundUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		18AA0A15282596010013DDCA /* ClinicalNutritionPlaygroundUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClinicalNutritionPlaygroundUITests.swift; sourceTree = "<group>"; };
+		18AA0A17282596010013DDCA /* ClinicalNutritionPlaygroundUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClinicalNutritionPlaygroundUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		18AA0A28282598CC0013DDCA /* RatioConverterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatioConverterViewController.swift; sourceTree = "<group>"; };
+		18AA0A2A28259A6C0013DDCA /* RatioConverterPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatioConverterPresenter.swift; sourceTree = "<group>"; };
+		18AA0A2C28259DC20013DDCA /* PFCRatio.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PFCRatio.swift; sourceTree = "<group>"; };
+		18AA0A2E2825A2260013DDCA /* RatioConverterUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatioConverterUseCase.swift; sourceTree = "<group>"; };
+		18AA0A3528265B2E0013DDCA /* BMICalculatorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BMICalculatorViewController.swift; sourceTree = "<group>"; };
+		18AA0A37282665D90013DDCA /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
+		18AA0A3928267BCF0013DDCA /* BMICalculatorViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BMICalculatorViewModel.swift; sourceTree = "<group>"; };
+		18AA0A3B28267BE30013DDCA /* PersonProfileUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonProfileUseCase.swift; sourceTree = "<group>"; };
+		1F1D09D6AF64B79FC952805F /* Pods-ClinicalNutritionPlayground.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ClinicalNutritionPlayground.debug.xcconfig"; path = "Target Support Files/Pods-ClinicalNutritionPlayground/Pods-ClinicalNutritionPlayground.debug.xcconfig"; sourceTree = "<group>"; };
+		2888B33AC8DB296EC82853D9 /* Pods_ClinicalNutritionPlayground_ClinicalNutritionPlaygroundUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ClinicalNutritionPlayground_ClinicalNutritionPlaygroundUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4E05170AABC49A0D07BDB9F2 /* Pods_ClinicalNutritionPlaygroundTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ClinicalNutritionPlaygroundTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5567C33423CF3197D10244B3 /* Pods-ClinicalNutritionPlayground-ClinicalNutritionPlaygroundUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ClinicalNutritionPlayground-ClinicalNutritionPlaygroundUITests.debug.xcconfig"; path = "Target Support Files/Pods-ClinicalNutritionPlayground-ClinicalNutritionPlaygroundUITests/Pods-ClinicalNutritionPlayground-ClinicalNutritionPlaygroundUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		69371BDC3F2342BBC95B3C84 /* Pods_ClinicalNutritionPlayground.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ClinicalNutritionPlayground.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		89B2ACE1875632494C99D649 /* Pods-ClinicalNutritionPlayground-ClinicalNutritionPlaygroundUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ClinicalNutritionPlayground-ClinicalNutritionPlaygroundUITests.release.xcconfig"; path = "Target Support Files/Pods-ClinicalNutritionPlayground-ClinicalNutritionPlaygroundUITests/Pods-ClinicalNutritionPlayground-ClinicalNutritionPlaygroundUITests.release.xcconfig"; sourceTree = "<group>"; };
+		B4ABEC975B0C999239107DEA /* Pods-ClinicalNutritionPlaygroundTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ClinicalNutritionPlaygroundTests.debug.xcconfig"; path = "Target Support Files/Pods-ClinicalNutritionPlaygroundTests/Pods-ClinicalNutritionPlaygroundTests.debug.xcconfig"; sourceTree = "<group>"; };
+		D027029F94D59163CB5C6AD0 /* Pods-ClinicalNutritionPlayground.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ClinicalNutritionPlayground.release.xcconfig"; path = "Target Support Files/Pods-ClinicalNutritionPlayground/Pods-ClinicalNutritionPlayground.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		18AA09EE282595FF0013DDCA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				066F8C993AD4685B66422538 /* Pods_ClinicalNutritionPlayground.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18AA0A04282596010013DDCA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C66CD754356185041026230F /* Pods_ClinicalNutritionPlaygroundTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18AA0A0E282596010013DDCA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				53AA404889DA851F99C770E1 /* Pods_ClinicalNutritionPlayground_ClinicalNutritionPlaygroundUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0E8233A151F83390ACBC4951 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				69371BDC3F2342BBC95B3C84 /* Pods_ClinicalNutritionPlayground.framework */,
+				2888B33AC8DB296EC82853D9 /* Pods_ClinicalNutritionPlayground_ClinicalNutritionPlaygroundUITests.framework */,
+				4E05170AABC49A0D07BDB9F2 /* Pods_ClinicalNutritionPlaygroundTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		18A4A9E7283310F600FFED07 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				18A4A9E82833110F00FFED07 /* APIClient.swift */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		18AA09E8282595FF0013DDCA = {
+			isa = PBXGroup;
+			children = (
+				18AA09F3282595FF0013DDCA /* ClinicalNutritionPlayground */,
+				18AA0A0A282596010013DDCA /* ClinicalNutritionPlaygroundTests */,
+				18AA0A14282596010013DDCA /* ClinicalNutritionPlaygroundUITests */,
+				18AA09F2282595FF0013DDCA /* Products */,
+				35FD8096DD9EF852037D3213 /* Pods */,
+				0E8233A151F83390ACBC4951 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		18AA09F2282595FF0013DDCA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				18AA09F1282595FF0013DDCA /* ClinicalNutritionPlayground.app */,
+				18AA0A07282596010013DDCA /* ClinicalNutritionPlaygroundTests.xctest */,
+				18AA0A11282596010013DDCA /* ClinicalNutritionPlaygroundUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		18AA09F3282595FF0013DDCA /* ClinicalNutritionPlayground */ = {
+			isa = PBXGroup;
+			children = (
+				18C01119282A05D8005BC51A /* NHNSDisplay */,
+				18AA0A3028265AF50013DDCA /* BMICalculator */,
+				18AA0A24282598900013DDCA /* NPCNRatioConverter */,
+				18AA09F4282595FF0013DDCA /* AppDelegate.swift */,
+				18AA09F6282595FF0013DDCA /* SceneDelegate.swift */,
+				18AA09F8282595FF0013DDCA /* ViewController.swift */,
+				18AA09FA282595FF0013DDCA /* Main.storyboard */,
+				18AA09FD282596010013DDCA /* Assets.xcassets */,
+				18AA09FF282596010013DDCA /* LaunchScreen.storyboard */,
+				18AA0A02282596010013DDCA /* Info.plist */,
+			);
+			path = ClinicalNutritionPlayground;
+			sourceTree = "<group>";
+		};
+		18AA0A0A282596010013DDCA /* ClinicalNutritionPlaygroundTests */ = {
+			isa = PBXGroup;
+			children = (
+				18AA0A0B282596010013DDCA /* ClinicalNutritionPlaygroundTests.swift */,
+			);
+			path = ClinicalNutritionPlaygroundTests;
+			sourceTree = "<group>";
+		};
+		18AA0A14282596010013DDCA /* ClinicalNutritionPlaygroundUITests */ = {
+			isa = PBXGroup;
+			children = (
+				18AA0A15282596010013DDCA /* ClinicalNutritionPlaygroundUITests.swift */,
+				18AA0A17282596010013DDCA /* ClinicalNutritionPlaygroundUITestsLaunchTests.swift */,
+			);
+			path = ClinicalNutritionPlaygroundUITests;
+			sourceTree = "<group>";
+		};
+		18AA0A24282598900013DDCA /* NPCNRatioConverter */ = {
+			isa = PBXGroup;
+			children = (
+				18AA0A27282598B40013DDCA /* Model */,
+				18AA0A26282598AE0013DDCA /* Presenter */,
+				18AA0A25282598A80013DDCA /* View */,
+			);
+			path = NPCNRatioConverter;
+			sourceTree = "<group>";
+		};
+		18AA0A25282598A80013DDCA /* View */ = {
+			isa = PBXGroup;
+			children = (
+				18AA0A28282598CC0013DDCA /* RatioConverterViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		18AA0A26282598AE0013DDCA /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				18AA0A2A28259A6C0013DDCA /* RatioConverterPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		18AA0A27282598B40013DDCA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				18AA0A2C28259DC20013DDCA /* PFCRatio.swift */,
+				18AA0A2E2825A2260013DDCA /* RatioConverterUseCase.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		18AA0A3028265AF50013DDCA /* BMICalculator */ = {
+			isa = PBXGroup;
+			children = (
+				18AA0A3428265B1D0013DDCA /* Model */,
+				18AA0A3328265B0E0013DDCA /* ViewModel */,
+				18AA0A3228265B090013DDCA /* View */,
+			);
+			path = BMICalculator;
+			sourceTree = "<group>";
+		};
+		18AA0A3228265B090013DDCA /* View */ = {
+			isa = PBXGroup;
+			children = (
+				18AA0A3528265B2E0013DDCA /* BMICalculatorViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		18AA0A3328265B0E0013DDCA /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				18AA0A3928267BCF0013DDCA /* BMICalculatorViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		18AA0A3428265B1D0013DDCA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				18AA0A3D2826D17B0013DDCA /* Domain */,
+				18AA0A3B28267BE30013DDCA /* PersonProfileUseCase.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		18AA0A3D2826D17B0013DDCA /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				18AA0A37282665D90013DDCA /* Person.swift */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		18C01119282A05D8005BC51A /* NHNSDisplay */ = {
+			isa = PBXGroup;
+			children = (
+				18A4A9E7283310F600FFED07 /* Utility */,
+				18C0111A282A0695005BC51A /* Model */,
+				18C0111B282A069A005BC51A /* MVVM */,
+				18C0111C282A06A0005BC51A /* View */,
+			);
+			path = NHNSDisplay;
+			sourceTree = "<group>";
+		};
+		18C0111A282A0695005BC51A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				187B260D2833B38D00758648 /* StatDataObject.swift */,
+				18786139283FEE8F00C6AEF5 /* StatDataUseCase.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		18C0111B282A069A005BC51A /* MVVM */ = {
+			isa = PBXGroup;
+			children = (
+				187B26112833CDDA00758648 /* ProfessionChartViewModel.swift */,
+			);
+			path = MVVM;
+			sourceTree = "<group>";
+		};
+		18C0111C282A06A0005BC51A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				187B260F2833CDB800758648 /* ProfessionChartViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		35FD8096DD9EF852037D3213 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1F1D09D6AF64B79FC952805F /* Pods-ClinicalNutritionPlayground.debug.xcconfig */,
+				D027029F94D59163CB5C6AD0 /* Pods-ClinicalNutritionPlayground.release.xcconfig */,
+				5567C33423CF3197D10244B3 /* Pods-ClinicalNutritionPlayground-ClinicalNutritionPlaygroundUITests.debug.xcconfig */,
+				89B2ACE1875632494C99D649 /* Pods-ClinicalNutritionPlayground-ClinicalNutritionPlaygroundUITests.release.xcconfig */,
+				B4ABEC975B0C999239107DEA /* Pods-ClinicalNutritionPlaygroundTests.debug.xcconfig */,
+				03AAC5026DF20BDE09EE48A9 /* Pods-ClinicalNutritionPlaygroundTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		18AA09F0282595FF0013DDCA /* ClinicalNutritionPlayground */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 18AA0A1B282596010013DDCA /* Build configuration list for PBXNativeTarget "ClinicalNutritionPlayground" */;
+			buildPhases = (
+				028737A1E387F1678669EF02 /* [CP] Check Pods Manifest.lock */,
+				18AA09ED282595FF0013DDCA /* Sources */,
+				18AA09EE282595FF0013DDCA /* Frameworks */,
+				18AA09EF282595FF0013DDCA /* Resources */,
+				CB52CCEC929A5EF15443FA7E /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ClinicalNutritionPlayground;
+			productName = ClinicalNutritionPlayground;
+			productReference = 18AA09F1282595FF0013DDCA /* ClinicalNutritionPlayground.app */;
+			productType = "com.apple.product-type.application";
+		};
+		18AA0A06282596010013DDCA /* ClinicalNutritionPlaygroundTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 18AA0A1E282596010013DDCA /* Build configuration list for PBXNativeTarget "ClinicalNutritionPlaygroundTests" */;
+			buildPhases = (
+				FB16382686B63E980536CC72 /* [CP] Check Pods Manifest.lock */,
+				18AA0A03282596010013DDCA /* Sources */,
+				18AA0A04282596010013DDCA /* Frameworks */,
+				18AA0A05282596010013DDCA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				18AA0A09282596010013DDCA /* PBXTargetDependency */,
+			);
+			name = ClinicalNutritionPlaygroundTests;
+			productName = ClinicalNutritionPlaygroundTests;
+			productReference = 18AA0A07282596010013DDCA /* ClinicalNutritionPlaygroundTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		18AA0A10282596010013DDCA /* ClinicalNutritionPlaygroundUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 18AA0A21282596010013DDCA /* Build configuration list for PBXNativeTarget "ClinicalNutritionPlaygroundUITests" */;
+			buildPhases = (
+				0776B485CC3B8C2D1184F85F /* [CP] Check Pods Manifest.lock */,
+				18AA0A0D282596010013DDCA /* Sources */,
+				18AA0A0E282596010013DDCA /* Frameworks */,
+				18AA0A0F282596010013DDCA /* Resources */,
+				C04A8341BA721B1CCC972603 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				18AA0A13282596010013DDCA /* PBXTargetDependency */,
+			);
+			name = ClinicalNutritionPlaygroundUITests;
+			productName = ClinicalNutritionPlaygroundUITests;
+			productReference = 18AA0A11282596010013DDCA /* ClinicalNutritionPlaygroundUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		18AA09E9282595FF0013DDCA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1320;
+				LastUpgradeCheck = 1320;
+				TargetAttributes = {
+					18AA09F0282595FF0013DDCA = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
+					18AA0A06282596010013DDCA = {
+						CreatedOnToolsVersion = 13.2.1;
+						TestTargetID = 18AA09F0282595FF0013DDCA;
+					};
+					18AA0A10282596010013DDCA = {
+						CreatedOnToolsVersion = 13.2.1;
+						TestTargetID = 18AA09F0282595FF0013DDCA;
+					};
+				};
+			};
+			buildConfigurationList = 18AA09EC282595FF0013DDCA /* Build configuration list for PBXProject "ClinicalNutritionPlayground" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 18AA09E8282595FF0013DDCA;
+			productRefGroup = 18AA09F2282595FF0013DDCA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				18AA09F0282595FF0013DDCA /* ClinicalNutritionPlayground */,
+				18AA0A06282596010013DDCA /* ClinicalNutritionPlaygroundTests */,
+				18AA0A10282596010013DDCA /* ClinicalNutritionPlaygroundUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		18AA09EF282595FF0013DDCA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18AA0A01282596010013DDCA /* LaunchScreen.storyboard in Resources */,
+				18AA09FE282596010013DDCA /* Assets.xcassets in Resources */,
+				18AA09FC282595FF0013DDCA /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18AA0A05282596010013DDCA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18AA0A0F282596010013DDCA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		028737A1E387F1678669EF02 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ClinicalNutritionPlayground-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		0776B485CC3B8C2D1184F85F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ClinicalNutritionPlayground-ClinicalNutritionPlaygroundUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C04A8341BA721B1CCC972603 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ClinicalNutritionPlayground-ClinicalNutritionPlaygroundUITests/Pods-ClinicalNutritionPlayground-ClinicalNutritionPlaygroundUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ClinicalNutritionPlayground-ClinicalNutritionPlaygroundUITests/Pods-ClinicalNutritionPlayground-ClinicalNutritionPlaygroundUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ClinicalNutritionPlayground-ClinicalNutritionPlaygroundUITests/Pods-ClinicalNutritionPlayground-ClinicalNutritionPlaygroundUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CB52CCEC929A5EF15443FA7E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ClinicalNutritionPlayground/Pods-ClinicalNutritionPlayground-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ClinicalNutritionPlayground/Pods-ClinicalNutritionPlayground-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ClinicalNutritionPlayground/Pods-ClinicalNutritionPlayground-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FB16382686B63E980536CC72 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ClinicalNutritionPlaygroundTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		18AA09ED282595FF0013DDCA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18AA0A3A28267BCF0013DDCA /* BMICalculatorViewModel.swift in Sources */,
+				18AA0A3C28267BE30013DDCA /* PersonProfileUseCase.swift in Sources */,
+				18AA09F9282595FF0013DDCA /* ViewController.swift in Sources */,
+				18AA09F5282595FF0013DDCA /* AppDelegate.swift in Sources */,
+				18AA09F7282595FF0013DDCA /* SceneDelegate.swift in Sources */,
+				18AA0A2D28259DC20013DDCA /* PFCRatio.swift in Sources */,
+				187B26102833CDB800758648 /* ProfessionChartViewController.swift in Sources */,
+				18AA0A29282598CC0013DDCA /* RatioConverterViewController.swift in Sources */,
+				18AA0A2B28259A6C0013DDCA /* RatioConverterPresenter.swift in Sources */,
+				18AA0A38282665D90013DDCA /* Person.swift in Sources */,
+				18A4A9E92833110F00FFED07 /* APIClient.swift in Sources */,
+				187B260E2833B38D00758648 /* StatDataObject.swift in Sources */,
+				18AA0A2F2825A2260013DDCA /* RatioConverterUseCase.swift in Sources */,
+				18AA0A3628265B2E0013DDCA /* BMICalculatorViewController.swift in Sources */,
+				1878613A283FEE9000C6AEF5 /* StatDataUseCase.swift in Sources */,
+				187B26122833CDDA00758648 /* ProfessionChartViewModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18AA0A03282596010013DDCA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18AA0A0C282596010013DDCA /* ClinicalNutritionPlaygroundTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18AA0A0D282596010013DDCA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18AA0A16282596010013DDCA /* ClinicalNutritionPlaygroundUITests.swift in Sources */,
+				18AA0A18282596010013DDCA /* ClinicalNutritionPlaygroundUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		18AA0A09282596010013DDCA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 18AA09F0282595FF0013DDCA /* ClinicalNutritionPlayground */;
+			targetProxy = 18AA0A08282596010013DDCA /* PBXContainerItemProxy */;
+		};
+		18AA0A13282596010013DDCA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 18AA09F0282595FF0013DDCA /* ClinicalNutritionPlayground */;
+			targetProxy = 18AA0A12282596010013DDCA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		18AA09FA282595FF0013DDCA /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				18AA09FB282595FF0013DDCA /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		18AA09FF282596010013DDCA /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				18AA0A00282596010013DDCA /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		18AA0A19282596010013DDCA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		18AA0A1A282596010013DDCA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		18AA0A1C282596010013DDCA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1F1D09D6AF64B79FC952805F /* Pods-ClinicalNutritionPlayground.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ClinicalNutritionPlayground/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = toaster.ClinicalNutritionPlayground;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		18AA0A1D282596010013DDCA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D027029F94D59163CB5C6AD0 /* Pods-ClinicalNutritionPlayground.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ClinicalNutritionPlayground/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = toaster.ClinicalNutritionPlayground;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		18AA0A1F282596010013DDCA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B4ABEC975B0C999239107DEA /* Pods-ClinicalNutritionPlaygroundTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = toaster.ClinicalNutritionPlaygroundTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ClinicalNutritionPlayground.app/ClinicalNutritionPlayground";
+			};
+			name = Debug;
+		};
+		18AA0A20282596010013DDCA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 03AAC5026DF20BDE09EE48A9 /* Pods-ClinicalNutritionPlaygroundTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = toaster.ClinicalNutritionPlaygroundTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ClinicalNutritionPlayground.app/ClinicalNutritionPlayground";
+			};
+			name = Release;
+		};
+		18AA0A22282596010013DDCA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5567C33423CF3197D10244B3 /* Pods-ClinicalNutritionPlayground-ClinicalNutritionPlaygroundUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = toaster.ClinicalNutritionPlaygroundUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ClinicalNutritionPlayground;
+			};
+			name = Debug;
+		};
+		18AA0A23282596010013DDCA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 89B2ACE1875632494C99D649 /* Pods-ClinicalNutritionPlayground-ClinicalNutritionPlaygroundUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = toaster.ClinicalNutritionPlaygroundUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ClinicalNutritionPlayground;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		18AA09EC282595FF0013DDCA /* Build configuration list for PBXProject "ClinicalNutritionPlayground" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				18AA0A19282596010013DDCA /* Debug */,
+				18AA0A1A282596010013DDCA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		18AA0A1B282596010013DDCA /* Build configuration list for PBXNativeTarget "ClinicalNutritionPlayground" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				18AA0A1C282596010013DDCA /* Debug */,
+				18AA0A1D282596010013DDCA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		18AA0A1E282596010013DDCA /* Build configuration list for PBXNativeTarget "ClinicalNutritionPlaygroundTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				18AA0A1F282596010013DDCA /* Debug */,
+				18AA0A20282596010013DDCA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		18AA0A21282596010013DDCA /* Build configuration list for PBXNativeTarget "ClinicalNutritionPlaygroundUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				18AA0A22282596010013DDCA /* Debug */,
+				18AA0A23282596010013DDCA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 18AA09E9282595FF0013DDCA /* Project object */;
+}
